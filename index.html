@@ -15,6 +15,7 @@
 <br>
 
 <p id="outPut"></p>
+<p id="in"></p>
 
 <br>
 <p id="play">시도한 횟수 : 0</p>
@@ -41,6 +42,7 @@ function numc() {
 	}else {
 		c = c + 1
 		document.querySelector("#play").innerHTML="시도한 횟수 : "+c
+		document.querySelector("#in").innerHTML="입력했던 숫자 : "+
 		if(i == rand) {
 			document.querySelector("#outPut").innerHTML="정답입니다!!!";
 		}else if(i < rand) {
